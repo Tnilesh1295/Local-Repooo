@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body style="margin: 0">
+<!DOCTYPE html>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Document</title>
+    <link href="" rel="stylesheet" />
+    <div id="header" style="padding: 1rem; background-color: lightblue">
+        <h1 id="main-heading" style="margin: 0">Expense tracker app</h1>
+    </div>
+    <div>
+        <form onsubmit="handleFormSubmit(event)">
+            <h2 id="expense-heading">Add Expense</h2>
+            <label for="expAmt">
+            Choose ExpenseAmount:</label>
+            <input id="ea" name="expAmt" type="text" />
+            <label for="des">
+            Choose Description:
+            </label>
+            <input id="explain" name="des" type="text" />
+            <label for="category">
+            Choose a Category:</label>
+            <select id="reasonid" name="category">
+                <option value="movie">Movie</option>
+                <option value="shop">Shopping</option>
+                <option value="masti">Fun</option>
+                <option value="food">Food</option>
+            </select>
+            <button type="submit">
+                Add
+            </button>
+        </form>
+        <ul id="user-list">
+        </ul>
+    </div>
+    <div id="thanks">
+    </div>
+</body>
+<script src="objlocalstorage.js"></script>
+
+</html>
